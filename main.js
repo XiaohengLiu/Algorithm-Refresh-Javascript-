@@ -1,5 +1,6 @@
 'use strict';
 let BTP = require('./binaryTreePath');
+let AMS = require('./arithmeticSlice');
 
 function testBinaryTreePath() {
     let root = BTP.createNode(3);
@@ -8,4 +9,11 @@ function testBinaryTreePath() {
     console.log('binary Tree Path result: ', BTP.binaryTreePaths(root));
 }
 
-testBinaryTreePath();
+function testArithmeticSlice() {
+    console.log('testing Arithmetic Slice:');
+    console.log(AMS.numberOfArithmeticSlices([1,2,3,4]));
+    console.log(AMS.numberOfArithmeticSlices([1,2,3,4,7,8,9]));
+}
+
+// testBinaryTreePath();
+testArithmeticSlice();
